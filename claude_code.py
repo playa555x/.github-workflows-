@@ -34,7 +34,7 @@ def process_code_files():
     Verarbeitet Code-Dateien im Repository und lässt Claude Verbesserungen vorschlagen
     """
     # Hier Code zum Durchsuchen des Repos nach bestimmten Dateien
-    code_files = ["example.py", "app.js"]  # Beispiel
+    code_files = ["Player.cs", "GameManager.cs"]  # Beispiel
     
     for file_path in code_files:
         if os.path.exists(file_path):
