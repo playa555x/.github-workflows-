@@ -21,4 +21,3 @@ jobs:
 
       - name: Execute Claude Script
         run: python claude_code.py  # Hier dein Claude-generierter Code
-
