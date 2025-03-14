@@ -1,1 +1,24 @@
+name: Claude Code Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-claude:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Python
+        run: sudo apt-get install python3
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Execute Claude Script
+        run: python claude_code.py  # Hier dein Claude-generierter Code
 
